@@ -945,7 +945,9 @@ var render = function render() {
   counter.innerText = state.counter;
 };
 
-render();
+render(); // 16.2.9 구독하기
+
+store.subscribe(render);
 },{"redux":"node_modules/redux/es/redux.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
