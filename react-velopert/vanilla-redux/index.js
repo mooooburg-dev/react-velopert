@@ -48,4 +48,17 @@ function reducer(state = initialState, action) {
 // 16.2.7 스토어 만들기
 const store = createStore(reducer);
 
-//
+// 16.2.8 render 함수 만들기
+const render = () => {
+  const state = store.getState(); // 션태 상태를 불러온다.
+  // 토글 처리
+  if (state.toggle) {
+    divToggle.classList.add('active');
+  } else {
+    divToggle.classList.remove('active');
+  }
+  // 카운터 처리
+  counter.innerText = state.counter;
+};
+
+render();
