@@ -898,7 +898,7 @@ var decrease = function decrease() {
 
 var initialState = {
   toggle: false,
-  count: 0
+  counter: 0
 }; // 16.2.6 리듀서 함수 정의
 
 function reducer() {
@@ -948,6 +948,18 @@ var render = function render() {
 render(); // 16.2.9 구독하기
 
 store.subscribe(render);
+
+divToggle.onclick = function () {
+  store.dispatch(toggleSwitch());
+};
+
+btnIncrease.onclick = function () {
+  store.dispatch(increase(1));
+};
+
+btnDecrease.onclick = function () {
+  store.dispatch(decrease());
+};
 },{"redux":"node_modules/redux/es/redux.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

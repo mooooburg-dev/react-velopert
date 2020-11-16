@@ -18,7 +18,7 @@ const decrease = () => ({ type: DECREASE });
 // 16.2.5 초깃값 설정
 const initialState = {
   toggle: false,
-  count: 0,
+  counter: 0,
 };
 
 // 16.2.6 리듀서 함수 정의
@@ -65,3 +65,15 @@ render();
 
 // 16.2.9 구독하기
 store.subscribe(render);
+
+divToggle.onclick = () => {
+  store.dispatch(toggleSwitch());
+};
+
+btnIncrease.onclick = () => {
+  store.dispatch(increase(1));
+};
+
+btnDecrease.onclick = () => {
+  store.dispatch(decrease());
+};
