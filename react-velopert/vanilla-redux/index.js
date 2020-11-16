@@ -1,3 +1,5 @@
+import { createStore } from 'redux';
+
 // 16.2.3 DOM 레퍼런스 만들기
 const divToggle = document.querySelector('.toggle');
 const counter = document.querySelector('h1');
@@ -28,20 +30,22 @@ function reducer(state = initialState, action) {
         ...state, // 불변성 유지를 해 주어야 합니다.
         toggle: !state.toggle,
       };
-
     case INCREASE:
       return {
         ...state,
         counter: state.counter + action.difference,
       };
-
     case DECREASE:
       return {
         ...state,
         counter: state.counter - 1,
       };
-
     default:
       return state;
   }
 }
+
+// 16.2.7 스토어 만들기
+const store = createStore(reducer);
+
+//
