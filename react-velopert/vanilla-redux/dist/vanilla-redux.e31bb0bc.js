@@ -947,7 +947,7 @@ var render = function render() {
 
 render(); // 16.2.9 구독하기
 
-store.subscribe(render);
+store.subscribe(render); // 16.2.10 액션 발생시키기
 
 divToggle.onclick = function () {
   store.dispatch(toggleSwitch());
