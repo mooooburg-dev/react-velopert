@@ -1,4 +1,4 @@
-![image](https://image.yes24.com/momo/TopCate2535/MidCate006/253457270.jpg=100))
+![image](https://image.yes24.com/momo/TopCate2535/MidCate006/253457270.jpg){: width="100"}
 
 # 리액트를 다루는 기술 예제 학습 저장소
 
