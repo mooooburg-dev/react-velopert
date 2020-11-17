@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/18201794/99345946-d6652f80-28d6-11eb-8be5-ac354a3a7a56.png)
+![image](https://image.yes24.com/momo/TopCate2535/MidCate006/253457270.jpg)
 
 # 리액트를 다루는 기술 예제 학습 저장소
 
