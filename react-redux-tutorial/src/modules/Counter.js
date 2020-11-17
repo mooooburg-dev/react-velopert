@@ -22,9 +22,7 @@ function counter(state = initialState, action) {
         number: state.number - 1,
       };
     default:
-      return {
-        state,
-      };
+      return state;
   }
 }
 
