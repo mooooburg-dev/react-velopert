@@ -4,7 +4,7 @@
 
 # 리액트를 다루는 기술 예제 학습 저장소
 
-remind 노트  
+Remind 노트  
 https://www.notion.so/drawyourmind/81dbc01da55e44ce9cda8db9054e7aab
 
 16장 리덕스 라이브러리 이해하기  
