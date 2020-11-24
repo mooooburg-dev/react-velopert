@@ -18,8 +18,8 @@ const TodosContainer = () => {
   const onChangeInput = useCallback((input) => dispatch(changeInput(input)), [dispatch]);
 
   const onInsert = useCallback((text) => dispatch(insert(text)), [dispatch]);
-  const onToggle = useCallback((text) => dispatch(toggle(id)), [dispatch]);
-  const onRemove = useCallback((text) => dispatch(remove(id)), [dispatch]);
+  const onToggle = useCallback((id) => dispatch(toggle(id)), [dispatch]);
+  const onRemove = useCallback((id) => dispatch(remove(id)), [dispatch]);
 
   return <Todos input={input} todos={todos} onChangeInput={onChangeInput} onInsert={onInsert} onRemove={onRemove} />;
 };
