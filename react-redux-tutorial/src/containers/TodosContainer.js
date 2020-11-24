@@ -21,7 +21,7 @@ const TodosContainer = () => {
   const onToggle = useCallback((id) => dispatch(toggle(id)), [dispatch]);
   const onRemove = useCallback((id) => dispatch(remove(id)), [dispatch]);
 
-  return <Todos input={input} todos={todos} onChangeInput={onChangeInput} onInsert={onInsert} onRemove={onRemove} />;
+  return <Todos input={input} todos={todos} onChangeInput={onChangeInput} onInsert={onInsert} onToggle={onToggle} onRemove={onRemove} />;
 };
 
 export default TodosContainer;
