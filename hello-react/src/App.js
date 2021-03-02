@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import IterationSample from './IterationSample';
 // import EventPractice from "./EventPractice"
-import ValidationSample from './ValidationSample';
+// import ValidationSample from './ValidationSample';
 // import ScrollBox from './ScrollBox'
-// import Iteration from './IterationSample'
+// import Iteration from './IterationSample';
 // import LifeCycleSample from './LifeCycleSample';
 // import ErrorBoundry from './ErrorBoundary';
 
@@ -22,7 +23,7 @@ class App extends Component {
   };
   render() {
     return (
-      <ValidationSample />
+      <IterationSample />
 
       // <div>
       //   <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
