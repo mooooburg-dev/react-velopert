@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import IterationSample from './IterationSample';
+// import IterationSample from './IterationSample';
 // import EventPractice from "./EventPractice"
 // import ValidationSample from './ValidationSample';
 // import ScrollBox from './ScrollBox'
 // import Iteration from './IterationSample';
-// import LifeCycleSample from './LifeCycleSample';
-// import ErrorBoundry from './ErrorBoundary';
+import LifeCycleSample from './LifeCycleSample';
+import ErrorBoundry from './ErrorBoundary';
 
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -23,7 +23,12 @@ class App extends Component {
   };
   render() {
     return (
-      <IterationSample />
+      <div>
+        <button onClick={this.handleClick}>랜덤 색상</button>
+        <ErrorBoundry>
+          <LifeCycleSample color={this.state.color} />
+        </ErrorBoundry>
+      </div>
 
       // <div>
       //   <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
