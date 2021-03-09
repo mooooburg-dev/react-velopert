@@ -1,59 +1,68 @@
-import React, { useState, useEffect, useReducer } from 'react';
-import useInputs from './useInputs';
+import React, { useReducer } from 'react'
+import useInputs from './useInputs'
 
 function reducer(state, action) {
-  return {
-    ...state,
-    [action.name]: action.value,
-  };
+	return {
+		...state,
+		[action.name]: action.value,
+	}
 }
 
 const Info = () => {
-  const [state, onChange] = useInputs({
-    name: '',
-    nickname: '',
-  });
-  const { name, nickname } = state;
+	const [state, onChange] = useInputs({
+		name: '',
+		nickname: '',
+	})
 
-  // const [name, setName] = useState('');
-  // const [nickname, setNickname] = useState('');
+	const { name, nickname } = state
+	return (
+		<div>
+			<div>
+				<input name='name' value={name} onChange={onChange} />
+				<input name='nickname' value={nickname} onChange={onChange} />
+			</div>
+			<div>
+				<div>
+					<b>이름:</b>
+					{name}
+				</div>
+				<div>
+					<b>닉네임:</b>
+					{nickname}
+				</div>
+			</div>
+		</div>
+	)
+}
 
-  // useEffect(() => {
-  //   console.log('effect');
-  //   console.log(name);
+// const Info = () => {
+// 	const [state, dispatch] = useReducer(reducer, {
+// 		name: '',
+// 		nickname: '',
+// 	})
 
-  //   return () => {
-  //     console.log('cleanup');
-  //     console.log(name);
-  //   };
-  // }, [name]);
+// 	const { name, nickname } = state
 
-  // const onChangeName = (e) => {
-  //   setName(e.target.value);
-  // };
+// 	const onChange = (e) => {
+// 		dispatch(e.target)
+// 	}
 
-  // const onChangeNickname = (e) => {
-  //   setNickname(e.target.value);
-  // };
+// 	return (
+// 		<div>
+// 			<div>
+// 				<input name='name' value={name} onChange={onChange} />
+// 				<input name='nickname' value={nickname} onChange={onChange} />
+// 			</div>
+// 			<div>
+// 				<div>
+// 					<b>이름:</b> {name}
+// 				</div>
+// 				<div>
+// 					<b>닉네임:</b> {nickname}
+// 				</div>
+// 			</div>
+// 		</div>
+// 	)
+// }
 
-  return (
-    <div>
-      <div>
-        <input name="name" value={name} onChange={onChange}></input>
-        <input nickname="nickname" value={nickname} onChange={onChange}></input>
-      </div>
-      <div>
-        <div>
-          <b>이름 : </b>
-          {name}
-        </div>
-        <div>
-          <b>닉네임 : </b>
-          {nickname}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Info;
+export default Info

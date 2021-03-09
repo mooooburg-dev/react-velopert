@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Info from './Info';
+import React from 'react'
+import Info from './Info'
 
 const App = () => {
-  return (
-    <div>
-      <Info></Info>
-    </div>
-  );
-};
+	return (
+		<div>
+			<Info></Info>
+		</div>
+	)
+}
 
-export default App;
+export default App
