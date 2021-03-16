@@ -1,12 +1,12 @@
 import './App.css'
-import SassComponent from './SassComponent'
+import CSSModule from './CSSModule'
 
 function App() {
-	return (
-		<div>
-			<SassComponent />
-		</div>
-	)
+  return (
+    <div>
+      <CSSModule />
+    </div>
+  )
 }
 
 export default App
