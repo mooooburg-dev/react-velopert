@@ -1,12 +1,12 @@
 .TodoTemplate {
+  // border: 2px solid red;
   width: 512px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6rem;
+  margin: 6rem auto;
   border-radius: 4px;
   overflow: hidden;
 
   .app-title {
+    // border: 2px solid blue;
     background: #22b8cf;
     color: white;
     height: 4rem;
